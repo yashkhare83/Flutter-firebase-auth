@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 
 import 'auth/sign_in.dart';
 
-void main() {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  Firebase.initializeApp();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
