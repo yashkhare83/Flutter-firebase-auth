@@ -26,8 +26,8 @@ class SignIn extends StatelessWidget {
       accessToken: googleAuth?.accessToken,
       idToken: googleAuth?.idToken,
     );
-    print(credential);
 
+    print(credential);
     // Once signed in, return the UserCredential
     return await FirebaseAuth.instance.signInWithCredential(credential);
   }
